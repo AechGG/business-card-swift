@@ -26,22 +26,8 @@ struct ContentView: View {
                     .bold()
                 Text("Software Engineer").foregroundColor(.white).font(.system(size: 25))
                 Divider()
-                RoundedRectangle(cornerRadius: 40)
-                    .foregroundColor(.white)
-                    .frame(height: 40)
-                    .overlay(Text("AechGG.github.io")
-                        .font(Font.custom("SuisseIntlMono-Regular", size: 15))
-                        .foregroundColor(.black))
-                RoundedRectangle(cornerRadius: 40)
-                    .foregroundColor(.white)
-                    .frame(height: 40)
-                    .overlay(HStack {
-                        Image(systemName: "phone.fill").foregroundColor(Color(red: 0.00, green: 0.81, blue: 0.79))
-                        Text("+44 1234 567891")
-                            .font(Font.custom("SuisseIntlMono-Regular", size: 15))
-                            .foregroundColor(.black)
-                    })
-                
+                InfoView(text: "AechGG.github.io", imageName: "phone.fill")
+                InfoView(text: "+44 1234 567891", imageName: "phone.fill")
             }
         }
     }
@@ -50,5 +36,24 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct InfoView: View {
+    
+    let text: String
+    let imageName: String
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: 40)
+            .foregroundColor(.white)
+            .frame(height: 40)
+            .overlay(HStack {
+                Image(systemName: "phone.fill").foregroundColor(Color(red: 0.00, green: 0.81, blue: 0.79))
+                Text("+44 1234 567891")
+                    .font(Font.custom("SuisseIntlMono-Regular", size: 15))
+                    .foregroundColor(.black)
+            })
+            .padding(.all)
     }
 }
