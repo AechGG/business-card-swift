@@ -13,6 +13,8 @@
 		828DC3B324EBEE7C0075A3F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 828DC3B224EBEE7C0075A3F9 /* Assets.xcassets */; };
 		828DC3B624EBEE7C0075A3F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 828DC3B524EBEE7C0075A3F9 /* Preview Assets.xcassets */; };
 		828DC3B924EBEE7C0075A3F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 828DC3B724EBEE7C0075A3F9 /* LaunchScreen.storyboard */; };
+		828DC3C224EBF1580075A3F9 /* SourceCodePro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 828DC3C124EBF1580075A3F9 /* SourceCodePro-Regular.ttf */; };
+		828DC3C424EBF2240075A3F9 /* SuisseIntlMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 828DC3C324EBF2240075A3F9 /* SuisseIntlMono-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		828DC3B524EBEE7C0075A3F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		828DC3B824EBEE7C0075A3F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		828DC3BA24EBEE7C0075A3F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		828DC3C124EBF1580075A3F9 /* SourceCodePro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Regular.ttf"; sourceTree = "<group>"; };
+		828DC3C324EBF2240075A3F9 /* SuisseIntlMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SuisseIntlMono-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		828DC3AB24EBEE7A0075A3F9 /* Business Card */ = {
 			isa = PBXGroup;
 			children = (
+				828DC3C024EBF14A0075A3F9 /* Fonts */,
 				828DC3AC24EBEE7A0075A3F9 /* AppDelegate.swift */,
 				828DC3AE24EBEE7A0075A3F9 /* SceneDelegate.swift */,
 				828DC3B024EBEE7A0075A3F9 /* ContentView.swift */,
@@ -73,6 +78,15 @@
 				828DC3B524EBEE7C0075A3F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		828DC3C024EBF14A0075A3F9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				828DC3C324EBF2240075A3F9 /* SuisseIntlMono-Regular.ttf */,
+				828DC3C124EBF1580075A3F9 /* SourceCodePro-Regular.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				828DC3B924EBEE7C0075A3F9 /* LaunchScreen.storyboard in Resources */,
+				828DC3C224EBF1580075A3F9 /* SourceCodePro-Regular.ttf in Resources */,
 				828DC3B624EBEE7C0075A3F9 /* Preview Assets.xcassets in Resources */,
 				828DC3B324EBEE7C0075A3F9 /* Assets.xcassets in Resources */,
+				828DC3C424EBF2240075A3F9 /* SuisseIntlMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
